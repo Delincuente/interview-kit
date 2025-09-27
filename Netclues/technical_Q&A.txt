@@ -1,0 +1,210 @@
+1. What is JS
+--> JavaScript is a high-level, interpreted programming language. 
+--> Used mainly to make web pages interactive. 
+--> With Node.js, it’s also widely used on the server side. 
+--> It’s the language that powers both the frontend and backend of modern web 
+    applications.
+----------------------------------------------------------------------------------
+
+2. what is nodejs
+--> Node.js is a JavaScript runtime environment built on Chrome’s V8 engine. 
+--> It allows us to run JavaScript outside the browser, mainly on the server side. 
+--> It’s event-driven, non-blocking, and lightweight, which makes it great for 
+    building scalable and real-time applications like APIs or chat systems.
+----------------------------------------------------------------------------------
+
+3. what is reactjs
+--> React.js is a JavaScript library developed by Facebook for building user 
+    interfaces. 
+--> It’s component-based and follows a declarative approach, which makes UI 
+    development more predictable and easier to manage. 
+--> One of its key features is the virtual DOM, which helps update only what’s 
+    necessary on the page, making applications faster and more efficient.
+
+--> React.js is a JavaScript library for building fast, reusable, and 
+    component-based user interfaces, mainly used in frontend development.
+----------------------------------------------------------------------------------
+
+4. Is JS synchronous or asynchronous
+--> JavaScript is synchronous and single-threaded by default. 
+--> But with the help of the event loop, it can handle asynchronous tasks 
+    like API calls, timers, or file operations. 
+--> So the language itself is synchronous, while the runtime environment 
+    gives it asynchronous behavior.
+
+--> JavaScript is synchronous by default, but it supports asynchronous 
+    operations through the event loop.
+----------------------------------------------------------------------------------
+
+5. React life cycle
+--> The React lifecycle refers to the different phases a component goes through 
+    from when it’s created, updated, and finally removed from the DOM. 
+--> In React class components, it’s divided into three main phases: 
+    Mounting, Updating, and Unmounting, with lifecycle methods like 
+    componentDidMount, componentDidUpdate, and componentWillUnmount.
+
+--> In functional components, we manage the lifecycle using React hooks like 
+    useEffect.
+
+--> React lifecycle is the series of phases a component goes through mounting, 
+    updating, and unmounting managed by lifecycle methods in class components or 
+    hooks in functional components.
+----------------------------------------------------------------------------------
+
+6. What is spread and rest operator
+--> Spread expands arrays, string, or objects, while rest collects 
+    multiple values into one.
+
+--> Spread operator: Used to expand elements of an array, string, or object.
+--> Rest operator is used to collect multiple arguments into a single array 
+    or object.
+----------------------------------------------------------------------------------
+
+5. How node (or js) handles the multi threading? or 
+    how to make it a multi-threading?
+--> JavaScript itself is single-threaded, which means it executes one task 
+    at a time. 
+--> Node.js is also single-threaded at its core but uses an event loop and 
+    non-blocking I/O to handle multiple operations concurrently,
+    giving the appearance of multitasking.
+
+--> For true multithreading in Node.js, we can use worker threads, 
+    which allow us to run JavaScript in parallel on separate threads for 
+    CPU-intensive tasks. 
+--> Alternatively, for I/O-heavy operations, Node’s asynchronous non-blocking 
+    model is usually enough without creating extra threads.
+
+--> JS is single-threaded, but Node.js handles concurrency with the event loop 
+    and non-blocking I/O. 
+--> For true multithreading, Node.js provides worker threads.
+----------------------------------------------------------------------------------
+
+6. what is event loop in node
+--> The event loop in Node.js is a mechanism that allows JavaScript to perform 
+    non-blocking I/O operations, even though it’s single-threaded. 
+--> It continuously checks the call stack and the task queue: 
+    if the stack is empty, it takes the next callback from the queue and 
+    executes it.
+--> This is what enables Node.js to handle multiple operations like file reads, 
+    API calls, or timers concurrently without blocking the main thread.
+----------------------------------------------------------------------------------
+
+7. difference between find and filter
+--> Both find and filter are array methods, but they work differently
+--> find returns the first element in an array that satisfies a condition. 
+    If no element matches, it returns undefined
+--> filter returns all elements that satisfy a condition in a new array. 
+    If no element matches, it returns an empty array.
+
+--> find returns the first matching element, 
+--> filter returns all matching elements in a new array.
+----------------------------------------------------------------------------------
+
+8. what is callback
+--> A callback is a function passed as an argument to another function, 
+    which is then executed after a certain task is completed. 
+--> It’s commonly used for handling asynchronous operations, 
+    like reading a file or making an API call
+
+--> A callback is a function passed into another function to be executed later, 
+    often used for async tasks.
+----------------------------------------------------------------------------------
+
+9. difference between react and angular
+--> React and Angular are both used for building web applications, 
+    but they differ in approach and architecture
+    --> React is a library focused on building user interfaces. 
+    --> It’s component-based, uses a virtual DOM for fast updates, and is more 
+        flexible, allowing developers to choose their own tools for routing, 
+        state management, etc.
+
+	--> Angular is a full-fledged framework. 
+    --> It’s opinionated, comes with built-in features like routing, 
+        form handling, and dependency injection, and uses a real DOM with 
+        two-way data binding.
+
+--> React is a UI library with a virtual DOM and more flexibility, 
+--> Angular is a complete framework with two-way data binding and 
+    built-in features.
+----------------------------------------------------------------------------------
+
+10. what is synchronous and asynchronous
+--> Synchronous operations are executed one after another, 
+    meaning each task waits for the previous one to complete. 
+    
+--> Asynchronous operations, on the other hand, don’t block the execution tasks 
+    can run in the background while the next lines of code continue to execute.
+
+--> Synchronous tasks run sequentially and block execution, 
+--> Asynchronous tasks run concurrently without blocking the main thread.
+----------------------------------------------------------------------------------
+
+11. What is a view in DBMS?
+--> A view in a database is a virtual table that is based 
+    on the result of a SQL query. 
+--> It doesn’t store data physically but presents data from one or more tables
+    in a customized way. 
+--> Views are mainly used for simplifying complex queries, enhancing security 
+    by restricting access to certain columns, and providing a consistent 
+    interface to the underlying data.
+
+--> A view is a virtual table created from a query that shows data from one or
+    more tables without storing it physically.
+----------------------------------------------------------------------------------
+
+12. What is the aggregate in DBMS?
+--> In DBMS, an aggregate refers to a function that performs a calculation on 
+    multiple rows of a table and returns a single value. 
+--> Common aggregate functions include SUM(), AVG(), COUNT(), MAX(), and MIN(). 
+--> They’re mainly used in queries to get summarized information, 
+    like total sales, average marks, or the highest salary.
+
+--> An aggregate is a function that summarizes multiple rows into a single value,
+    like SUM, COUNT, or AVG
+----------------------------------------------------------------------------------
+
+13. What is a multer in node?
+--> Multer is a middleware for handling multipart/form-data, 
+    which is primarily used for uploading files in Node.js applications. 
+--> It works with Express and allows you to store files either in memory or 
+    on disk, and also provides options for filtering file types, 
+    setting file size limits, and naming files.
+
+--> Multer is a Node.js middleware used for handling file uploads in forms 
+    with multipart/form-data.
+----------------------------------------------------------------------------------
+
+14. What is fs module in Node?
+--> The fs (File System) module in Node.js provides an API to interact with 
+    the file system. 
+--> It allows you to read, write, update, delete, and manipulate files and 
+    directories. 
+--> The module offers both synchronous and asynchronous methods, 
+    which makes it easy to handle I/O operations efficiently.
+
+--> fs is a Node.js module used to perform file operations like 
+    read, write, and delete, supporting both sync and async methods.
+----------------------------------------------------------------------------------
+
+15. How do we handle multiple files uploaded by a user with different field names?
+--> In Node.js, using Multer, we can handle multiple files with different field 
+    names using the fields() method. 
+--> You define an array of objects specifying the field names and the maximum 
+    number of files for each field. 
+--> Multer will then process each file accordingly.
+
+--> Use Multer’s fields() method to define multiple fields with their max 
+    file counts, and access the uploaded files via req.files.
+----------------------------------------------------------------------------------
+
+16. What is storage in Multer?
+--> In Multer, storage defines where and how the uploaded files are stored. 
+    There are two built-in storage engines
+--> DiskStorage: saves files to disk. 
+    You can customize the destination folder and file names.
+--> MemoryStorage: stores files in memory as Buffer objects, useful for 
+    processing files before saving.
+
+--> Storage in Multer determines where and how uploaded files are saved, 
+    either on disk or in memory.
+----------------------------------------------------------------------------------
