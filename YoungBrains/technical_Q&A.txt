@@ -1,0 +1,22 @@
+why node is single threaded
+what is view in SQL ?
+can we use join with view (table join with view)
+swap two number without using third variable
+what is staging in git
+
+	stage - 1 (user registration) 
+	stage - 2 (subscription) 
+	stage - 3 (payment)
+which node js functionality or module helps or make it possible
+so that user can't access the next stage without completing the 
+pervious stage
+
+
+let's take a example of site where
+we have list of preview of videos and their thumbnail. Users have started clicking on to one after the another rapidly.
+and as you said that node execute requests one after the other
+so in that case let's suppose we have fire 100s or thousands of requests and from that one of my request completed. what will happen now
+
+how can Netflix allow user to run or watch other video without competing the first one if the node is executing the request one after the other
+
+is javascript a single  threaded? are you sure ?
